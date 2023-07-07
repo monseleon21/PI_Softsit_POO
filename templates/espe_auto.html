@@ -1,32 +1,38 @@
 <!DOCTYPE html>
  <html>
- <head>
- <title> Especificaciones </title>
- <link rel="stylesheet" href="C:\Users\Monse\OneDrive\Documentos\GitHub\PI_SOFTSIT\PI_estilos.css">
- </head>
- <body>
- <div class="container">
-     <h2 style = "color: rgba(0, 0, 0, 0.936);" > Especificaciones </h2>
-     <br>
-     <form>
-     <input type="text" placeholder="Marca de su auto" required><br>
-     <input type="text" placeholder="Modelo de su auto" required>
-    <br>   
-    <select required>
-    <option vaklue disabled seected> Seleccionar funda </option>
-    <option value="basic"> Basico </option>
-    <option value="clasico"> Clasico </option>
-    <option value="premium"> Premium </option>
-    </select>
-    <br>   <br>
-    <br>    
-    <br><br>
-    <button onclick="redireccionar()">Guardar</button>
+  <head>
+  <title> Especificaciones </title>
+  <link rel="stylesheet" href="C:\Users\Monse\OneDrive\Documentos\GitHub\PI_Softsit_POO\templates\PI_estilos.css">
+    </head>
+      <body>
+        <div class="container">
+          <h2 style = "color: rgba(0, 0, 0, 0.936);" > Especificaciones </h2>
+          <br>
+         
+          <form action="/guardares" method="POST">
 
-    <script>
-     function redireccionar() {
-       window.location.href = "file:///C:/Users/Monse/OneDrive/Documentos/GitHub/PI_SOFTSIT/exito.html";
-     }
-   </script>
-</form>
-</div>
+             <input type ="text" name="txtMarca" placeholder="Marca de su auto">
+             <input type ="text" name="txtModelo" placeholder="Modelo de su auto">
+             <br>
+             <button type="submit">Guardar</button>
+            <br>   
+            <br>
+            <br>
+
+            <form action="/opt" method="POST">
+              <div class="select">
+                  <select id="funda">
+                      <option selected disabled>Selecionar funda</option>
+                      <option value="basico">Basico</option>
+                      <option value="clasico">Clasico</option>
+                      <option value="premium">Premium</option>
+                  </select>
+              </div>
+          </form>
+            <br>
+            <br>    
+            <br>
+        </div>
+
+      </body>
+</html>>

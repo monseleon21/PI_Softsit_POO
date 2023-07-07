@@ -1,27 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <title>Menu</title>
-  <link rel="stylesheet" href="C:\Users\Monse\OneDrive\Documentos\GitHub\PI_SOFTSIT\PI_estilos.css">
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <link rel="stylesheet" href="C:\Users\Monse\OneDrive\Documentos\GitHub\PI_Softsit_POO\templates\PI_estilos.css">
 </head>
-<body>
-  <h1>Menu</h1>
-  <div class="container">
-  <button onclick="redirigirsabermas()"> SABER MAS </button>
-  <button onclick="redirigirpedido()"> REALIZAR PEDIDO </button>
-  <button onclick="redirigircontact()"> CONTACTANOS </button>
+  <body>
+    <div class="form-main">
+        <div class="form-conte">
+            <div class="box">
+        <h3>Menú Principal</h3>
+        
+        <form action="{{ url_for('menu') }}" method="GET">
+            <button type="submit" class="boton mas">Saber mas </button>
+        </form>
 
-  <script>
-    function redirigirsabermas() {
-      window.location.href = "file:///C:/Users/Monse/OneDrive/Documentos/GitHub/PI_Softsit_POO/saber_mas.html";
-    }
-    function redirigirpedido() {
-      window.location.href = "file:///C:/Users/Monse/OneDrive/Documentos/GitHub/PI_Softsit_POO/pedidos_fundas.html";
-    }
-    function redirigircontact() {
-      window.location.href = "file:///C:/Users/Monse/OneDrive/Documentos/GitHub/PI_Softsit_POO/contactanos.html";
-    }
-  </script>
-</div>
-</body>
+        <form action="{{ url_for('pedidos_fundas') }}" method="GET">
+            <button type="submit" class="boton mas">Realizar pedido</button>
+        </form>
+
+        <form action="{{ url_for('contactanos') }}" method="GET">
+            <button type="submit" class="boton mas">Contactanos</button>
+        </form>
+            </div>
+        </div>
+      </div>  
+    </body>
+  </head>
 </html>
