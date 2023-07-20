@@ -113,3 +113,41 @@ button {
   margin-bottom: -300px;
   border-radius: 40px;
 }
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('C:/Users/RULO JR/Desktop/PI_SOFTSIT-master/carretera-vacia-rodeada-colinas-cielo-nublado-atardecer_181624-15528.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8); 
+  padding: 20px;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+h1 {
+  color: #333;
+}
+
+.button {
+  display: block;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 10px auto;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
