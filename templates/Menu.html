@@ -30,5 +30,32 @@
         </div>
       </div>  
     </body>
+    {% extends 'plantilla.html'%}
+   
+    {% block body %}
+ 
+    
+    <br>
+     <br>
+     <h1>Gestion de albums</h1>
+     <br>
+     
+     {% with mensajes= get_flashed_messages() %}
+        {% if mensajes %}
+           {% for msj in mensajes %}
+              <h3> {{msj}}</h3>
+           {% endfor %}
+        {% endif %}
+     {% endwith %}
+ 
+     {% endfor %}
+    </tbody>
+  
+  </table>
+  
+  # incrusta de lo arriba y abajo que corresponga de la plantilla
+  
+  {% endblock %}
+  
   </head>
 </html>
